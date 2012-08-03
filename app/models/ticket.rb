@@ -7,8 +7,6 @@ class Ticket < ActiveRecord::Base
   #–¼‘O“ü—Í‚Í•K{
   validates :name, presence: true
   
-  validates :phone_number, presence: true
-  
   validates_length_of :phone_number, :within => 10..11
   
   
